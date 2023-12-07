@@ -93,7 +93,7 @@ function App() {
           </div>
       }
       <div className="App">
-        <ChessBoard position={fen} onDrop={onDrop}/>
+        <ChessBoard position={fen} onDrop={onDrop} orientation={color === 'white' ? 'white' : 'black'}/>
       </div>
     </>
   );
