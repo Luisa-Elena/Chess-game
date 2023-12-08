@@ -46,7 +46,7 @@ function App() {
     setFen(game.current.fen())
   }
 
-  //useEffect(() => {
+  useEffect(() => {
     socket.on('move', ({sourceSquare, targetSquare}) => {
       try {
         game.current.move({
@@ -70,7 +70,7 @@ function App() {
       setText(text)
     })
 
-  //}, [socket])
+  }, [socket])
 
   return (
     <>
